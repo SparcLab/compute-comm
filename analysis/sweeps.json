@@ -1,0 +1,190 @@
+{
+ "about": "Pairs (of 114) where computing first wins over BLE / over Wi-R, pairs where Wi-R raw streaming is the lowest of all options, and the median of best-BLE energy / Wi-R raw energy.",
+ "bleKeepAlive": {
+  "ms30": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 0,
+   "wirRawLowest": 114,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 13.48,
+   "bleCheaper": []
+  },
+  "ms1000": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 0,
+   "wirRawLowest": 114,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 6.14,
+   "bleCheaper": []
+  },
+  "ms4000": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 0,
+   "wirRawLowest": 92,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 6.06,
+   "bleCheaper": [
+    {
+     "model": "lsm",
+     "mcu": "wba52",
+     "bleOverWiR": 0.719
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "wba52",
+     "bleOverWiR": 0.72
+    },
+    {
+     "model": "lsm",
+     "mcu": "n52840",
+     "bleOverWiR": 0.866
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "n52840",
+     "bleOverWiR": 0.866
+    },
+    {
+     "model": "lsm",
+     "mcu": "n5340",
+     "bleOverWiR": 0.723
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "n5340",
+     "bleOverWiR": 0.724
+    },
+    {
+     "model": "lsm",
+     "mcu": "n54l15",
+     "bleOverWiR": 0.841
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "n54l15",
+     "bleOverWiR": 0.841
+    },
+    {
+     "model": "lsm",
+     "mcu": "apollo3",
+     "bleOverWiR": 0.892
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "apollo3",
+     "bleOverWiR": 0.892
+    },
+    {
+     "model": "lsm",
+     "mcu": "apollo4",
+     "bleOverWiR": 0.943
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "apollo4",
+     "bleOverWiR": 0.943
+    },
+    {
+     "model": "lsm",
+     "mcu": "mg24",
+     "bleOverWiR": 0.846
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "mg24",
+     "bleOverWiR": 0.846
+    },
+    {
+     "model": "lsm",
+     "mcu": "bg22",
+     "bleOverWiR": 0.741
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "bg22",
+     "bleOverWiR": 0.741
+    },
+    {
+     "model": "lsm",
+     "mcu": "cc2340",
+     "bleOverWiR": 0.659
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "cc2340",
+     "bleOverWiR": 0.66
+    },
+    {
+     "model": "lsm",
+     "mcu": "cc2652",
+     "bleOverWiR": 0.725
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "cc2652",
+     "bleOverWiR": 0.725
+    },
+    {
+     "model": "lsm",
+     "mcu": "alifb1",
+     "bleOverWiR": 0.571
+    },
+    {
+     "model": "sensorlm",
+     "mcu": "alifb1",
+     "bleOverWiR": 0.571
+    }
+   ]
+  }
+ },
+ "packetDelivery": {
+  "p1": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 0,
+   "wirRawLowest": 114,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 13.48,
+   "bleCheaper": []
+  },
+  "p0.99": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 0,
+   "wirRawLowest": 114,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 7.94,
+   "bleCheaper": []
+  },
+  "p0.95": {
+   "computeFirstBLE": 11,
+   "computeFirstWiR": 1,
+   "wirRawLowest": 113,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 6.32,
+   "bleCheaper": []
+  },
+  "p0.9": {
+   "computeFirstBLE": 12,
+   "computeFirstWiR": 2,
+   "wirRawLowest": 112,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 5.26,
+   "bleCheaper": []
+  },
+  "p0.8": {
+   "computeFirstBLE": 13,
+   "computeFirstWiR": 4,
+   "wirRawLowest": 110,
+   "pairs": 114,
+   "medianBestBLEoverWiRraw": 4.2,
+   "bleCheaper": []
+  }
+ },
+ "fp32Model": {
+  "computeFirstBLE": 1,
+  "computeFirstWiR": 0,
+  "wirRawLowest": 114,
+  "pairs": 114,
+  "medianBestBLEoverWiRraw": 13.74,
+  "bleCheaper": []
+ }
+}

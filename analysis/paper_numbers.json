@@ -1,0 +1,493 @@
+{
+  "about": "Numbers quoted in the paper \"Compute or communicate?\", produced by reproduce.js with the Version 2 energy model. Energies are per inference period at the chip supply pins (no regulator loss) unless a field says battery. results.json has every split at full precision.",
+  "reference_settings": "int8 model and 16-bit raw input; BLE 2 Mbps, 0 dBm, 30 ms connection interval, 6 packets per event, 30 ms keep-alive between inferences; Wi-R 5 Mbps, normal mode, deep sleep between transfers; MCU awake at 16 MHz while a radio sends; no lost packets.",
+  "placement_counts": {
+    "model_mcu_pairs": 114,
+    "ble_local_processing_wins": {
+      "count": 11,
+      "meaning": "pairs where running part of the network on the wearable uses less energy than streaming the raw input over BLE",
+      "pairs": [
+        "SleepFM encoder on STM32U385, sending 5-s tokens (one per channel per 5 s)",
+        "SleepFM encoder on STM32WBA52 (BLE), sending 5-s tokens (one per channel per 5 s)",
+        "SleepFM encoder on nRF54L15 (BLE), sending 5-s tokens (one per channel per 5 s)",
+        "SleepFM encoder on Ambiq Apollo3 Blue (BLE), sending 5-s tokens (one per channel per 5 s)",
+        "EnsembleSleepNet on Ambiq Apollo4 Blue Plus (BLE), sending Per-channel CNN outputs (27 branches)",
+        "SleepFM encoder on Ambiq Apollo4 Blue Plus (BLE), sending 5-s tokens (one per channel per 5 s)",
+        "EnsembleSleepNet on Ambiq Apollo510, sending Per-channel CNN outputs (27 branches)",
+        "SleepFM encoder on Ambiq Apollo510, sending 5-s tokens (one per channel per 5 s)",
+        "SleepFM encoder on SiLabs EFR32MG24 / BG24 (BLE, MVP), sending 5-s tokens (one per channel per 5 s)",
+        "EnsembleSleepNet on Alif Balletto B1 (BLE, CPU only), sending Per-channel CNN outputs (27 branches)",
+        "SleepFM encoder on Alif Balletto B1 (BLE, CPU only), sending 5-s tokens (one per channel per 5 s)"
+      ]
+    },
+    "wir_streaming_wins": {
+      "count": 114,
+      "meaning": "pairs where streaming the raw input over Wi-R uses the least energy"
+    },
+    "by_setting": [
+      {
+        "setting": "Reference: 6 BLE packets per event, 30-ms keep-alive, MCU awake while sending",
+        "ble_local_processing_wins": 11,
+        "wir_streaming_wins": 114
+      },
+      {
+        "setting": "1-s BLE keep-alive between inferences",
+        "ble_local_processing_wins": 11,
+        "wir_streaming_wins": 114
+      },
+      {
+        "setting": "4-s BLE keep-alive; DMA feeds the radio (MCU asleep, wakes per packet)",
+        "ble_local_processing_wins": 9,
+        "wir_streaming_wins": 114
+      },
+      {
+        "setting": "21 BLE packets per connection event",
+        "ble_local_processing_wins": 9,
+        "wir_streaming_wins": 114
+      },
+      {
+        "setting": "MCU awake only to hand each packet to the radio (20 µs + 8-Mb/s link)",
+        "ble_local_processing_wins": 9,
+        "wir_streaming_wins": 114
+      }
+    ]
+  },
+  "sleepfm_on_stm32u385": {
+    "period_s": 300,
+    "raw_input_bits": 14131200,
+    "token_bits": 1413120,
+    "token_MACs": 1126609920,
+    "compute_energy_mJ": 91.26,
+    "ble_energy_mJ": {
+      "stream_raw_input": 204.38,
+      "send_tokens": 156.74,
+      "saving_percent": 23.3
+    },
+    "wir_energy_mJ": {
+      "stream_raw_input": 13.41,
+      "send_tokens": 95.27,
+      "tokens_cost_times_more": 7.1
+    },
+    "break_even_pJ_per_MAC": {
+      "ble": 123.3,
+      "wir": 8.35,
+      "stm32u385_measured": 81,
+      "meaning": "computing the tokens saves energy if the MCU spends less than this per MAC"
+    },
+    "bits_saved_per_MAC": 0.01129,
+    "energy_per_bit_nJ": {
+      "ble_all_in": 10.92,
+      "wir_all_in": 0.739,
+      "ble_radio_only": 9.18,
+      "wir_radio_only": 0.537,
+      "meaning": "all_in: energy saved per bit not sent (radio + MCU awake while sending, minus the sleep and keep-alive that time replaces); radio_only: radio energy alone"
+    },
+    "sleep_energy_displaced_by_computing_pJ_per_MAC": 0.11,
+    "crossover_link_energy_nJ_per_bit": 7.17,
+    "crossover_meaning": "a link above this energy per bit favors sending tokens, a link below it favors streaming; it depends only on the MCU and the network",
+    "battery_energy_mJ": {
+      "conversion_efficiency": 0.85,
+      "ble_stream_raw_input": 240.44,
+      "ble_send_tokens": 184.4,
+      "wir_stream_raw_input": 15.78,
+      "wir_send_tokens": 112.08
+    }
+  },
+  "per_model_on_stm32u385_link": [
+    {
+      "model": "AttX (VGG)",
+      "period_s": 4,
+      "raw_input_bits": 81920,
+      "split_with_highest_ble_break_even": "Final class scores (3 classes)",
+      "split_bits": 24,
+      "split_MACs": 268871168,
+      "share_of_model_MACs_percent": 100,
+      "bits_saved_per_MAC": 0.000305,
+      "ble_break_even_pJ_per_MAC": 3.362,
+      "wir_break_even_pJ_per_MAC": 0.3301,
+      "ble_local_processing_wins_of_19_mcus": 0,
+      "largest_data_expansion_times": 16
+    },
+    {
+      "model": "AttX (ResNet)",
+      "period_s": 4,
+      "raw_input_bits": 81920,
+      "split_with_highest_ble_break_even": "Final class scores (3 classes)",
+      "split_bits": 24,
+      "split_MACs": 283064448,
+      "share_of_model_MACs_percent": 100,
+      "bits_saved_per_MAC": 0.000289,
+      "ble_break_even_pJ_per_MAC": 3.194,
+      "wir_break_even_pJ_per_MAC": 0.3135,
+      "ble_local_processing_wins_of_19_mcus": 0,
+      "largest_data_expansion_times": 4.6
+    },
+    {
+      "model": "EnsembleSleepNet",
+      "period_s": 30,
+      "raw_input_bits": 302400,
+      "split_with_highest_ble_break_even": "Per-channel CNN outputs (27 branches)",
+      "split_bits": 15104,
+      "split_MACs": 39600672,
+      "share_of_model_MACs_percent": 88.7,
+      "bits_saved_per_MAC": 0.00725,
+      "ble_break_even_pJ_per_MAC": 79.05,
+      "wir_break_even_pJ_per_MAC": 5.403,
+      "ble_local_processing_wins_of_19_mcus": 3,
+      "largest_data_expansion_times": 2
+    },
+    {
+      "model": "LSM-Base",
+      "period_s": 18000,
+      "raw_input_bits": 124800,
+      "split_with_highest_ble_break_even": "Final embedding (average over all tokens)",
+      "split_bits": 6144,
+      "split_MACs": 15892346880,
+      "share_of_model_MACs_percent": 100,
+      "bits_saved_per_MAC": 0.00000747,
+      "ble_break_even_pJ_per_MAC": 0.1907,
+      "wir_break_even_pJ_per_MAC": 0.115,
+      "ble_local_processing_wins_of_19_mcus": 0,
+      "largest_data_expansion_times": 8.9
+    },
+    {
+      "model": "SleepFM encoder",
+      "period_s": 300,
+      "raw_input_bits": 14131200,
+      "split_with_highest_ble_break_even": "5-s tokens (one per channel per 5 s)",
+      "split_bits": 1413120,
+      "split_MACs": 1126609920,
+      "share_of_model_MACs_percent": 40,
+      "bits_saved_per_MAC": 0.0113,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.346,
+      "ble_local_processing_wins_of_19_mcus": 8,
+      "largest_data_expansion_times": 1
+    },
+    {
+      "model": "SensorLM-B sensor tower",
+      "period_s": 86400,
+      "raw_input_bits": 599040,
+      "split_with_highest_ble_break_even": "Final sensor embedding (average + projection)",
+      "split_bits": 6144,
+      "split_MACs": 276619051008,
+      "share_of_model_MACs_percent": 100,
+      "bits_saved_per_MAC": 0.00000214,
+      "ble_break_even_pJ_per_MAC": 0.133,
+      "wir_break_even_pJ_per_MAC": 0.1112,
+      "ble_local_processing_wins_of_19_mcus": 0,
+      "largest_data_expansion_times": 19.2
+    }
+  ],
+  "energy_per_bit_across_19_mcus_nJ": {
+    "ble": [
+      7.9,
+      44.5
+    ],
+    "wir": [
+      0.68,
+      4.02
+    ],
+    "meaning": "range of the all-in energy per bit over the MCU presets; it varies because the MCU awake while sending is part of it"
+  },
+  "other_worked_examples": {
+    "ensemblesleepnet_on_stm32u585": {
+      "ble_stream_raw_input_mJ": 9.1,
+      "ble_send_cnn_outputs_mJ": 14.28,
+      "meaning": "the CNN cuts the data 20x but uses 89% of the MACs, so sending its outputs costs more than streaming"
+    },
+    "ensemblesleepnet_on_apollo510": {
+      "ble_stream_raw_input_mJ": 8.71,
+      "ble_send_cnn_outputs_mJ": 6.9,
+      "wir_stream_raw_input_mJ": 1.02,
+      "wir_send_cnn_outputs_mJ": 2.05,
+      "ble_break_even_pJ_per_MAC": 76.9,
+      "wir_break_even_pJ_per_MAC": 5.17
+    },
+    "attx_vgg_on_stm32u385": {
+      "ble_stream_raw_input_mJ": 1.545,
+      "wir_stream_raw_input_mJ": 0.103,
+      "full_model_compute_mJ": 21.78,
+      "first_layer_data_expansion_times": 16
+    }
+  },
+  "sleepfm_on_stm32u385_sensitivity": [
+    {
+      "case": "Default",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 95.27,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "DMA; 1-s BLE idle interval",
+      "ble_stream_mJ": 134.69,
+      "ble_tokens_mJ": 109.35,
+      "ble_saving_percent": 18.8,
+      "wir_stream_mJ": 10.79,
+      "wir_tokens_mJ": 95,
+      "ble_break_even_pJ_per_MAC": 103.5,
+      "wir_break_even_pJ_per_MAC": 6.25,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "DMA; 1-s BLE idle; 7.5-ms bulk CI",
+      "ble_stream_mJ": 134.98,
+      "ble_tokens_mJ": 109.38,
+      "ble_saving_percent": 19,
+      "wir_stream_mJ": 10.79,
+      "wir_tokens_mJ": 95,
+      "ble_break_even_pJ_per_MAC": 103.7,
+      "wir_break_even_pJ_per_MAC": 6.25,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "DMA; 4-s BLE idle interval",
+      "ble_stream_mJ": 133.77,
+      "ble_tokens_mJ": 108.32,
+      "ble_saving_percent": 19,
+      "wir_stream_mJ": 10.79,
+      "wir_tokens_mJ": 95,
+      "ble_break_even_pJ_per_MAC": 103.6,
+      "wir_break_even_pJ_per_MAC": 6.25,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "BLE 21 packets per event",
+      "ble_stream_mJ": 186.1,
+      "ble_tokens_mJ": 154.92,
+      "ble_saving_percent": 16.8,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 95.27,
+      "ble_break_even_pJ_per_MAC": 108.7,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "MCU awake only to hand packets over",
+      "ble_stream_mJ": 175.67,
+      "ble_tokens_mJ": 153.88,
+      "ble_saving_percent": 12.4,
+      "wir_stream_mJ": 12.27,
+      "wir_tokens_mJ": 95.15,
+      "ble_break_even_pJ_per_MAC": 100.3,
+      "wir_break_even_pJ_per_MAC": 7.43,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "BLE random first-event wait",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 95.27,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Half compute energy",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 111.11,
+      "ble_saving_percent": 45.6,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 49.64,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Twice compute energy",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 248,
+      "ble_saving_percent": -21.3,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 186.52,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "Raw PSG, 23 channels at 128 Hz",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R 2.5 Mbps",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 23.72,
+      "wir_tokens_mJ": 96.3,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 16.58,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R 1 Mbps",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 54.65,
+      "wir_tokens_mJ": 99.39,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 41.29,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R low-power mode",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 7.09,
+      "wir_tokens_mJ": 94.61,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 3.32,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R wake-up energy 100x legacy",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 13.41,
+      "wir_tokens_mJ": 95.27,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 8.35,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R 99.9% per-packet delivery, 99% map target",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 23.72,
+      "wir_tokens_mJ": 96.3,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 16.58,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    },
+    {
+      "case": "Wi-R 99% per-packet delivery, 99% map target",
+      "ble_stream_mJ": 204.38,
+      "ble_tokens_mJ": 156.74,
+      "ble_saving_percent": 23.3,
+      "wir_stream_mJ": 34.03,
+      "wir_tokens_mJ": 97.33,
+      "ble_break_even_pJ_per_MAC": 123.3,
+      "wir_break_even_pJ_per_MAC": 24.82,
+      "ble_best": "5-s tokens (one per channel per 5 s)",
+      "wir_best": "Raw PSG, 23 channels at 128 Hz"
+    }
+  ],
+  "mcu_energy_per_MAC_pJ": [
+    {
+      "mcu": "STM32H7A3ZI",
+      "pJ_per_MAC": 478,
+      "source": "MLPerf Tiny measurement"
+    },
+    {
+      "mcu": "STM32U585",
+      "pJ_per_MAC": 213,
+      "source": "MLPerf Tiny measurement"
+    },
+    {
+      "mcu": "STM32U385",
+      "pJ_per_MAC": 81,
+      "source": "MLPerf Tiny measurement"
+    },
+    {
+      "mcu": "STM32L4R5 (L4+)",
+      "pJ_per_MAC": 440,
+      "source": "MLPerf Tiny measurement"
+    },
+    {
+      "mcu": "STM32L476",
+      "pJ_per_MAC": 550,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "STM32WBA52 (BLE)",
+      "pJ_per_MAC": 110,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "nRF52840 (BLE)",
+      "pJ_per_MAC": 260,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "nRF5340 app core (BLE)",
+      "pJ_per_MAC": 651,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "nRF54L15 (BLE)",
+      "pJ_per_MAC": 87,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "Ambiq Apollo3 Blue (BLE)",
+      "pJ_per_MAC": 56.7,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "Ambiq Apollo4 Blue Plus (BLE)",
+      "pJ_per_MAC": 48.8,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "Ambiq Apollo510",
+      "pJ_per_MAC": 31.2,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "SiLabs EFR32MG24 / BG24 (BLE, MVP)",
+      "pJ_per_MAC": 134,
+      "source": "MLPerf Tiny measurement"
+    },
+    {
+      "mcu": "SiLabs EFR32BG22 (BLE)",
+      "pJ_per_MAC": 161,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "TI CC2340R5 (BLE)",
+      "pJ_per_MAC": 1590,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "TI CC2652R (BLE)",
+      "pJ_per_MAC": 355,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "Renesas RA8M1",
+      "pJ_per_MAC": 541,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "NXP MCX N947 (CPU only)",
+      "pJ_per_MAC": 273,
+      "source": "datasheet estimate"
+    },
+    {
+      "mcu": "Alif Balletto B1 (BLE, CPU only)",
+      "pJ_per_MAC": 48.4,
+      "source": "datasheet estimate"
+    }
+  ]
+}

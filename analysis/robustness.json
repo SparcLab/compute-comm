@@ -1,0 +1,171 @@
+{
+  "reference": {
+    "reversals": [
+      "esn/alifb1",
+      "esn/apollo4",
+      "esn/apollo510",
+      "sleepfm/alifb1",
+      "sleepfm/apollo3",
+      "sleepfm/apollo4",
+      "sleepfm/apollo510",
+      "sleepfm/mg24",
+      "sleepfm/n54l15",
+      "sleepfm/u385",
+      "sleepfm/wba52"
+    ],
+    "wir_cut_pairs": 0
+  },
+  "margins": {
+    "esn/alifb1": {
+      "e_mac_up": 1.1705899785212994,
+      "e_mac_down": 8.285459387305702,
+      "ble_down": 1.1705899785212994,
+      "wir_up": 8.285459387305686,
+      "measured_emac": false
+    },
+    "esn/apollo4": {
+      "e_mac_up": 1.7799064543778191,
+      "e_mac_down": 9.601779745716046,
+      "ble_down": 1.7799064543778194,
+      "wir_up": 9.601779745716062,
+      "measured_emac": false
+    },
+    "esn/apollo510": {
+      "e_mac_up": 2.466282765140947,
+      "e_mac_down": 6.036789450066035,
+      "ble_down": 2.466282765140947,
+      "wir_up": 6.036789450066035,
+      "measured_emac": false
+    },
+    "sleepfm/alifb1": {
+      "e_mac_up": 1.8314158313432563,
+      "e_mac_down": 5.32751152159592,
+      "ble_down": 1.8314158313432563,
+      "wir_up": 5.32751152159592,
+      "measured_emac": false
+    },
+    "sleepfm/apollo3": {
+      "e_mac_up": 2.0787441867629806,
+      "e_mac_down": 7.167712355474499,
+      "ble_down": 2.0787441867629806,
+      "wir_up": 7.167712355474498,
+      "measured_emac": false
+    },
+    "sleepfm/apollo4": {
+      "e_mac_up": 2.767452091545833,
+      "e_mac_down": 6.372652297606654,
+      "ble_down": 2.767452091545833,
+      "wir_up": 6.372652297606642,
+      "measured_emac": false
+    },
+    "sleepfm/apollo510": {
+      "e_mac_up": 3.8455281919712374,
+      "e_mac_down": 3.8972268466064803,
+      "ble_down": 3.845528191971222,
+      "wir_up": 3.8972268466064883,
+      "measured_emac": false
+    },
+    "sleepfm/mg24": {
+      "e_mac_up": 1.2992447867287018,
+      "e_mac_down": 10.904111068694895,
+      "ble_down": 1.2992447867287018,
+      "wir_up": 10.904111068694895,
+      "measured_emac": true
+    },
+    "sleepfm/n54l15": {
+      "e_mac_up": 1.4886748806443992,
+      "e_mac_down": 10.073950708123238,
+      "ble_down": 1.4886748806443992,
+      "wir_up": 10.073950708123217,
+      "measured_emac": false
+    },
+    "sleepfm/u385": {
+      "e_mac_up": 1.5219754056199006,
+      "e_mac_down": 9.705504891232238,
+      "ble_down": 1.5219754056199006,
+      "wir_up": 9.705504891232236,
+      "measured_emac": true
+    },
+    "sleepfm/wba52": {
+      "e_mac_up": 1.4158664002106396,
+      "e_mac_down": 11.88443293504552,
+      "ble_down": 1.4158664002106396,
+      "wir_up": 11.884432935045519,
+      "measured_emac": false
+    }
+  },
+  "wir_all_offload": {
+    "holds_until_e_mac_overestimated_by": 3.8972268466064803,
+    "holds_until_wir_cost_underestimated_by": 3.8972268466064883
+  },
+  "monte_carlo": {
+    "x2_compute_x2_links": {
+      "n": 4000,
+      "reversals_median": 11,
+      "reversals_p5": 5,
+      "reversals_p95": 19,
+      "p_any_reversal": 1.0,
+      "p_wir_offloads_all": 0.9995,
+      "p_sleepfm_u385_reverses": 0.75125
+    },
+    "mlperf_calibrated_compute_x2_links": {
+      "n": 4000,
+      "reversals_median": 10,
+      "reversals_p5": 3,
+      "reversals_p95": 17,
+      "p_any_reversal": 1.0,
+      "p_wir_offloads_all": 1.0,
+      "p_sleepfm_u385_reverses": 0.70675
+    }
+  },
+  "memory_scale_lost_reversals": {
+    "x2": [
+      "esn/alifb1",
+      "esn/apollo4"
+    ],
+    "x4": [
+      "esn/alifb1",
+      "esn/apollo4",
+      "esn/apollo510"
+    ]
+  },
+  "mlperf_validation": {
+    "ratio_measured_over_model": {
+      "u385": {
+        "ad": 1.508641975308642,
+        "ic": 0.9666666666666667,
+        "kws": 1.1703703703703703,
+        "vww": 0.862962962962963
+      },
+      "h7a3": {
+        "ad": 1.18326359832636,
+        "ic": 0.9309623430962343,
+        "kws": 1.1732217573221757,
+        "vww": 0.893305439330544
+      },
+      "l4r5": {
+        "ad": 1.3234090909090908,
+        "ic": 0.9547727272727273,
+        "kws": 1.1668181818181818,
+        "vww": 0.8756818181818182
+      },
+      "u585": {
+        "ad": 1.372300469483568,
+        "ic": 0.9633802816901408,
+        "kws": 1.1741784037558685,
+        "vww": 0.860093896713615
+      }
+    },
+    "min": 0.860093896713615,
+    "max": 1.508641975308642,
+    "n": 16,
+    "conv_only_range": [
+      0.860093896713615,
+      0.9666666666666667
+    ],
+    "dense_ad_range": [
+      1.18326359832636,
+      1.508641975308642
+    ]
+  }
+}

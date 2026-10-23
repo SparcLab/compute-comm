@@ -1,0 +1,395 @@
+ver,org,system,bm,proc,mhz,accel,fw,lat_ms,en_uJ,macs_per_cycle,pJ_per_MAC,thr_src,thr_e
+v0.5,reference,Nucleo-L4R5ZI,ad,ARM®32-bit Cortex®-M4 CPU with FPU,120.0,,TensorFlow Lite for Microcontrollers v2.,10.052,416.312,0.219,1575.8,perf,96.154
+v0.5,reference,Nucleo-L4R5ZI,ic,ARM®32-bit Cortex®-M4 CPU with FPU,120.0,,TensorFlow Lite for Microcontrollers v2.,704.225,29207.01,0.148,2336.3,perf,1.42
+v0.5,reference,Nucleo-L4R5ZI,kws,ARM®32-bit Cortex®-M4 CPU with FPU,120.0,,TensorFlow Lite for Microcontrollers v2.,181.917,7373.704,0.122,2775.4,perf,5.539
+v0.5,reference,Nucleo-L4R5ZI,vww,ARM®32-bit Cortex®-M4 CPU with FPU,120.0,,TensorFlow Lite for Microcontrollers v2.,600.601,24312.648,0.104,3246.2,perf,1.658
+v0.7,Andes,AndesCore_d25_tflite_micro_framework,ad,"AndesCore™ D25F, 5-stage, single-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",16.799,,0.262,,perf,
+v0.7,Andes,AndesCore_d25_tflite_micro_framework,ic,"AndesCore™ D25F, 5-stage, single-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",304.692,,0.684,,perf,
+v0.7,Andes,AndesCore_d25_tflite_micro_framework,kws,"AndesCore™ D25F, 5-stage, single-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",79.853,,0.555,,perf,
+v0.7,Andes,AndesCore_d25_tflite_micro_framework,vww,"AndesCore™ D25F, 5-stage, single-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",296.384,,0.421,,perf,
+v0.7,Andes,AndesCore_d45_tflite_micro_framework,ad,"AndesCore™ D45, 8-stage, dual-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",12.128,,0.363,,perf,
+v0.7,Andes,AndesCore_d45_tflite_micro_framework,ic,"AndesCore™ D45, 8-stage, dual-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",227.687,,0.915,,perf,
+v0.7,Andes,AndesCore_d45_tflite_micro_framework,kws,"AndesCore™ D45, 8-stage, dual-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",68.311,,0.648,,perf,
+v0.7,Andes,AndesCore_d45_tflite_micro_framework,vww,"AndesCore™ D45, 8-stage, dual-issue, RV32 IMACP",60.0,,"tflite-micro, https://github.com/tensorf",225.581,,0.553,,perf,
+v0.7,Andes,AndesCore_nx27v_tflite_micro_framework,ad,"AndesCore™ NX27V, 5-stage, single-issue, RV64 IMACV, RVV(VLEN, SIMD, BIU)=(128, 128, 128)",60.0,,"tflite-micro, https://github.com/tensorf",4.093,,1.076,,perf,
+v0.7,STMicroelectronics,NUCLEO-H7A3ZI-Q,ad,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.1.0,2.281,349.026,0.414,1321.1,perf,437.867
+v0.7,STMicroelectronics,NUCLEO-H7A3ZI-Q,ic,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.1.0,70.363,11200.203,0.635,895.9,perf,14.197
+v0.7,STMicroelectronics,NUCLEO-H7A3ZI-Q,kws,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.1.0,22.29,3713.191,0.426,1397.6,perf,44.819
+v0.7,STMicroelectronics,NUCLEO-H7A3ZI-Q,vww,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.1.0,64.379,10487.668,0.415,1400.3,perf,15.522
+v0.7,STMicroelectronics,NUCLEO-U575ZI-Q,ad,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.1.0,5.728,152.56,0.288,577.5,perf,175.529
+v0.7,STMicroelectronics,NUCLEO-U575ZI-Q,ic,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.1.0,158.128,4151.13,0.494,332.0,perf,6.36
+v0.7,STMicroelectronics,NUCLEO-U575ZI-Q,kws,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.1.0,54.813,1482.396,0.303,558.0,perf,18.345
+v0.7,STMicroelectronics,NUCLEO-U575ZI-Q,vww,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.1.0,151.63,4030.97,0.309,538.2,perf,6.631
+v0.7,STMicroelectronics,NUCLEO_L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.1.0,9.666,431.211,0.228,1632.2,perf,103.632
+v0.7,STMicroelectronics,NUCLEO_L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.1.0,252.781,12298.289,0.412,983.7,perf,3.962
+v0.7,STMicroelectronics,NUCLEO_L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.1.0,97.647,4635.681,0.227,1744.9,perf,10.298
+v0.7,STMicroelectronics,NUCLEO_L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.1.0,254.647,12293.282,0.245,1641.4,perf,3.93
+v0.7,plumerai,DISCO_F746NG,ad,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,2.423,,0.505,,perf,
+v0.7,plumerai,DISCO_F746NG,ic,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,65.151,,0.888,,perf,
+v0.7,plumerai,DISCO_F746NG,kws,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,19.555,,0.629,,perf,
+v0.7,plumerai,DISCO_F746NG,vww,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,59.397,,0.584,,perf,
+v0.7,plumerai,NUCLEO_L4R5ZI,ad,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,5.895,,0.373,,perf,
+v0.7,plumerai,NUCLEO_L4R5ZI,ic,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,184.638,,0.564,,perf,
+v0.7,plumerai,NUCLEO_L4R5ZI,kws,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,73.546,,0.301,,perf,
+v0.7,plumerai,NUCLEO_L4R5ZI,vww,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,220.41,,0.283,,perf,
+v0.7,plumerai,cy8cproto_062_4343w,ad,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,6.794,,0.259,,perf,
+v0.7,plumerai,cy8cproto_062_4343w,ic,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,202.84,,0.411,,perf,
+v0.7,plumerai,cy8cproto_062_4343w,kws,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,63.666,,0.278,,perf,
+v0.7,plumerai,cy8cproto_062_4343w,vww,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,200.0,,0.25,,perf,
+v0.7,renesas,EK-RA6M4,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),200.0,,,4.613,324.088,0.286,1226.7,perf,219.568
+v0.7,renesas,EK-RA6M4,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),200.0,,,246.184,17723.829,0.254,1417.7,perf,4.055
+v0.7,renesas,EK-RA6M4,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),200.0,,,50.571,3796.957,0.263,1429.2,perf,19.685
+v0.7,renesas,EK-RA6M4,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),200.0,,,162.364,11851.829,0.231,1582.4,perf,6.239
+v0.7,renesas,RX65N-Cloud-Kit,ad,Renesas RXv2,120.0,,,8.554,437.442,0.257,1655.8,perf,118.402
+v0.7,renesas,RX65N-Cloud-Kit,ic,Renesas RXv2,120.0,,,289.352,14350.888,0.36,1147.9,perf,3.499
+v0.7,renesas,RX65N-Cloud-Kit,kws,Renesas RXv2,120.0,,,81.846,4422.68,0.271,1664.7,perf,12.37
+v0.7,renesas,RX65N-Cloud-Kit,vww,Renesas RXv2,120.0,,,248.509,13316.428,0.251,1778.0,perf,4.073
+v0.7,silicon_labs,silicon_labs_xG24_DK2601B,ad,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,5.41,45.722,0.626,173.1,perf,184.737
+v0.7,silicon_labs,silicon_labs_xG24_DK2601B,ic,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,239.981,2248.02,0.668,179.8,perf,4.161
+v0.7,silicon_labs,silicon_labs_xG24_DK2601B,kws,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,63.091,611.493,0.54,230.2,perf,15.837
+v0.7,silicon_labs,silicon_labs_xG24_DK2601B,vww,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,186.185,1721.774,0.516,229.9,perf,5.369
+v0.7,syntiant,syntiant_9120_0v9_30mhz,kws,HiFi3 + M0,30.7,Syntiant Core 2,N/A,4.314,35.286,20.059,13.3,perf,227.149
+v0.7,syntiant,syntiant_9120_1v1_98mhz,kws,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,1.791,49.587,15.03,18.7,perf,665.602
+v1.0,OctoML,microtvm_cmsis_nn/NRF5340-DK,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,6.266,,0.329,,perf,
+v1.0,OctoML,microtvm_cmsis_nn/NRF5340-DK,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,316.156,,0.309,,perf,
+v1.0,OctoML,microtvm_cmsis_nn/NRF5340-DK,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,76.086,,0.273,,perf,
+v1.0,OctoML,microtvm_cmsis_nn/NRF5340-DK,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,232.019,,0.252,,perf,
+v1.0,OctoML,microtvm_cmsis_nn/NUCLEO_L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,8.605,443.184,0.256,1677.5,perf,116.207
+v1.0,OctoML,microtvm_cmsis_nn/NUCLEO_L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.56,20236.298,0.267,1618.7,perf,2.566
+v1.0,OctoML,microtvm_cmsis_nn/NUCLEO_L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,99.81,5230.273,0.222,1968.7,perf,9.997
+v1.0,OctoML,microtvm_cmsis_nn/NUCLEO_L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,301.205,15531.354,0.207,2073.7,perf,3.347
+v1.0,OctoML,microtvm_native/NUCLEO_L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,11.718,633.734,0.188,2398.8,perf,85.332
+v1.0,OctoML,microtvm_native/NUCLEO_L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.257,21342.301,0.268,1707.2,perf,2.57
+v1.0,OctoML,microtvm_native/NUCLEO_L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,144.03,7950.51,0.154,2992.5,perf,6.941
+v1.0,OctoML,microtvm_native/NUCLEO_L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,336.587,17131.583,0.185,2287.4,perf,2.956
+v1.0,STMicroelectronics,NUCLEO-H7A3ZI-Q,ad,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,1.826,266.486,0.517,1008.7,perf,548.697
+v1.0,STMicroelectronics,NUCLEO-H7A3ZI-Q,ic,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,54.345,8707.284,0.822,696.5,perf,18.443
+v1.0,STMicroelectronics,NUCLEO-H7A3ZI-Q,kws,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,16.76,2721.781,0.566,1024.5,perf,59.782
+v1.0,STMicroelectronics,NUCLEO-H7A3ZI-Q,vww,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,50.705,7978.465,0.528,1065.3,perf,19.749
+v1.0,STMicroelectronics,NUCLEO-U575ZI-Q,ad,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.3.0,4.849,119.113,0.34,450.9,perf,207.366
+v1.0,STMicroelectronics,NUCLEO-U575ZI-Q,ic,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.3.0,139.704,3641.998,0.559,291.3,perf,7.2
+v1.0,STMicroelectronics,NUCLEO-U575ZI-Q,kws,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.3.0,44.232,1138.534,0.375,428.5,perf,22.689
+v1.0,STMicroelectronics,NUCLEO-U575ZI-Q,vww,Arm® Cortex®-M33 32-bit RISC core,160.0,,X-CUBE-AI v7.3.0,133.404,3364.456,0.351,449.2,perf,7.525
+v1.0,STMicroelectronics,NUCLEO_L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,7.579,322.977,0.291,1222.5,perf,132.077
+v1.0,STMicroelectronics,NUCLEO_L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,226.912,10681.623,0.459,854.4,perf,4.409
+v1.0,STMicroelectronics,NUCLEO_L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,75.058,3371.738,0.295,1269.1,perf,13.314
+v1.0,STMicroelectronics,NUCLEO_L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,230.468,10066.628,0.271,1344.1,perf,4.427
+v1.0,greenwaves-technologies,gap9_650_240,ad,GAP9 Risc-v,240.0,NE16,N/A,0.271,5.252,4.062,19.9,perf,3682.97
+v1.0,greenwaves-technologies,gap9_650_240,ic,GAP9 Risc-v,240.0,NE16,N/A,0.949,27.711,54.87,2.2,perf,1043.769
+v1.0,greenwaves-technologies,gap9_650_240,kws,GAP9 Risc-v,240.0,NE16,N/A,0.732,18.561,15.119,7.0,perf,1368.176
+v1.0,greenwaves-technologies,gap9_650_240,vww,GAP9 Risc-v,240.0,NE16,N/A,1.733,40.801,18.007,5.4,perf,577.979
+v1.0,greenwaves-technologies,gap9_800_370,ad,GAP9 Risc-v,370.0,NE16,N/A,0.176,7.294,4.064,27.6,perf,5681.28
+v1.0,greenwaves-technologies,gap9_800_370,ic,GAP9 Risc-v,370.0,NE16,N/A,0.616,40.356,54.831,3.2,perf,1607.976
+v1.0,greenwaves-technologies,gap9_800_370,kws,GAP9 Risc-v,370.0,NE16,N/A,0.475,26.659,15.102,10.0,perf,2107.926
+v1.0,greenwaves-technologies,gap9_800_370,vww,GAP9 Risc-v,370.0,NE16,N/A,1.125,58.356,17.996,7.8,perf,890.551
+v1.0,plumerai,B_U585I_IOT02A,ad,ARM Cortex-M33 with FPU,160.0,,Plumerai Inference Engine,4.851,,0.34,,perf,
+v1.0,plumerai,B_U585I_IOT02A,ic,ARM Cortex-M33 with FPU,160.0,,Plumerai Inference Engine,107.055,,0.73,,perf,
+v1.0,plumerai,B_U585I_IOT02A,kws,ARM Cortex-M33 with FPU,160.0,,Plumerai Inference Engine,35.437,,0.469,,perf,
+v1.0,plumerai,B_U585I_IOT02A,vww,ARM Cortex-M33 with FPU,160.0,,Plumerai Inference Engine,107.043,,0.437,,perf,
+v1.0,plumerai,DISCO_F746NG,ad,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,2.295,,0.533,,perf,
+v1.0,plumerai,DISCO_F746NG,ic,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,64.767,,0.894,,perf,
+v1.0,plumerai,DISCO_F746NG,kws,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,19.125,,0.643,,perf,
+v1.0,plumerai,DISCO_F746NG,vww,ARM Cortex-M7 with FPU,216.0,,Plumerai Inference Engine,57.029,,0.608,,perf,
+v1.0,plumerai,NUCLEO_L4R5ZI,ad,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,5.573,,0.395,,perf,
+v1.0,plumerai,NUCLEO_L4R5ZI,ic,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,173.16,,0.602,,perf,
+v1.0,plumerai,NUCLEO_L4R5ZI,kws,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,71.659,,0.309,,perf,
+v1.0,plumerai,NUCLEO_L4R5ZI,vww,ARM Cortex-M4 with FPU,120.0,,Plumerai Inference Engine,208.551,,0.299,,perf,
+v1.0,plumerai,cy8cproto_062_4343w,ad,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,6.661,,0.264,,perf,
+v1.0,plumerai,cy8cproto_062_4343w,ic,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,193.125,,0.432,,perf,
+v1.0,plumerai,cy8cproto_062_4343w,kws,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,61.399,,0.288,,perf,
+v1.0,plumerai,cy8cproto_062_4343w,vww,ARM Cortex-M4 with FPU,150.0,,Plumerai Inference Engine,192.456,,0.259,,perf,
+v1.0,silicon_labs,silicon_labs_xG24_DK2601B,ad,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,5.428,47.299,0.624,179.0,perf,184.281
+v1.0,silicon_labs,silicon_labs_xG24_DK2601B,ic,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,120.934,1234.65,1.325,98.8,perf,8.274
+v1.0,silicon_labs,silicon_labs_xG24_DK2601B,kws,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,36.281,401.861,0.939,151.3,perf,27.45
+v1.0,silicon_labs,silicon_labs_xG24_DK2601B,vww,"ARM Cortex-M33 CPU with FPU, DSP and TrustZone",78.0,Silicon Labs MVP,TensorFlow Lite for Microcontrollers='ht,111.607,1139.221,0.86,152.1,perf,8.969
+v1.0,syntiant,syntiant_9120_0v9_30mhz,ic,HiFi3 + M0,30.7,Syntiant Core 2,N/A,15.975,101.833,25.491,8.1,perf,62.267
+v1.0,syntiant,syntiant_9120_0v9_30mhz,kws,HiFi3 + M0,30.7,Syntiant Core 2,N/A,4.367,31.537,19.816,11.9,perf,227.204
+v1.0,syntiant,syntiant_9120_0v9_30mhz,vww,HiFi3 + M0,30.7,Syntiant Core 2,N/A,12.723,71.711,19.175,9.6,perf,78.088
+v1.0,syntiant,syntiant_9120_1v1_98mhz,ic,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,5.122,139.367,24.729,11.1,perf,195.027
+v1.0,syntiant,syntiant_9120_1v1_98mhz,kws,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,1.481,43.802,18.17,16.5,perf,664.507
+v1.0,syntiant,syntiant_9120_1v1_98mhz,vww,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,4.1,97.164,18.507,13.0,perf,241.08
+v1.1,Krai,NRF5340-DK_MICROTVM-CMSIS-NN,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,6.289,,0.328,,perf,
+v1.1,Krai,NRF5340-DK_MICROTVM-CMSIS-NN,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,317.864,,0.307,,perf,
+v1.1,Krai,NRF5340-DK_MICROTVM-CMSIS-NN,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,76.488,,0.271,,perf,
+v1.1,Krai,NRF5340-DK_MICROTVM-CMSIS-NN,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),128.0,,microTVM,233.318,,0.251,,perf,
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-7.3,ad,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,1.828,,0.516,,perf,
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-7.3,ic,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,53.839,8471.102,0.829,677.6,perf,18.631
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-7.3,kws,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,16.726,2367.474,0.567,891.1,perf,60.002
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-7.3,vww,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v7.3.0,50.408,7810.703,0.531,1042.9,perf,19.912
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-8.0,ad,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v8.0.0,1.827,235.833,0.516,892.7,perf,549.048
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-8.0,ic,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v8.0.0,54.9,7615.35,0.813,609.1,perf,18.283
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-8.0,kws,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v8.0.0,16.397,2362.103,0.579,889.1,perf,59.988
+v1.1,Krai,NUCLEO-H7A3ZI-Q_X-CUBE-AI-8.0,vww,32-Bit ARM® Cortex®-M7,280.0,,X-CUBE-AI v8.0.0,50.335,6928.315,0.531,925.1,perf,19.934
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-CMSIS-NN,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,8.605,,0.256,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-CMSIS-NN,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.56,,0.267,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-CMSIS-NN,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,99.81,,0.222,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-CMSIS-NN,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,300.842,,0.207,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-NATIVE,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,11.718,,0.188,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-NATIVE,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.105,,0.268,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-NATIVE,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,144.03,,0.154,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_MICROTVM-NATIVE,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,338.868,,0.184,,perf,
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-7.3,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,7.579,529.299,0.29,2003.5,perf,131.903
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-7.3,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,226.912,17755.446,0.459,1420.3,perf,4.406
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-7.3,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,74.733,5627.485,0.296,2118.2,perf,13.375
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-7.3,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v7.3.0,224.921,16536.336,0.277,2207.9,perf,4.447
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-8.0,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.0.0,7.579,528.881,0.291,2001.9,perf,131.915
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-8.0,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.0.0,221.976,17315.114,0.469,1385.0,perf,4.501
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-8.0,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.0.0,72.68,5481.633,0.305,2063.3,perf,13.744
+v1.1,Krai,NUCLEO-L4R5ZI_X-CUBE-AI-8.0,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.0.0,221.141,16573.08,0.282,2212.8,perf,4.518
+v1.1,Nuvoton,NUMAKER_M467HJ-zephyr,ad,Arm® Cortex®-M4F,200.0,,ONNC,4.887,,0.27,,perf,
+v1.1,Nuvoton,NUMAKER_M467HJ-zephyr,ic,Arm® Cortex®-M4F,200.0,,ONNC,171.438,,0.365,,perf,
+v1.1,Nuvoton,NUMAKER_M467HJ-zephyr,kws,Arm® Cortex®-M4F,200.0,,ONNC,46.185,,0.288,,perf,
+v1.1,Nuvoton,NUMAKER_M467HJ-zephyr,vww,Arm® Cortex®-M4F,200.0,,ONNC,98.726,,0.379,,perf,
+v1.1,STMicroelectronics,NUCLEO_H7A3ZI_Q,ad,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v8.1.0,1.818,221.217,0.519,837.3,perf,551.471
+v1.1,STMicroelectronics,NUCLEO_H7A3ZI_Q,ic,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v8.1.0,51.948,6310.692,0.859,504.8,perf,19.296
+v1.1,STMicroelectronics,NUCLEO_H7A3ZI_Q,kws,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v8.1.0,15.353,1869.384,0.618,703.6,perf,65.39
+v1.1,STMicroelectronics,NUCLEO_H7A3ZI_Q,vww,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v8.1.0,29.629,3699.351,0.903,493.9,perf,33.864
+v1.1,STMicroelectronics,NUCLEO_L4R5ZI,ad,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.1.0,6.857,293.912,0.321,1112.5,perf,145.716
+v1.1,STMicroelectronics,NUCLEO_L4R5ZI,ic,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.1.0,213.995,7019.085,0.487,561.5,perf,4.983
+v1.1,STMicroelectronics,NUCLEO_L4R5ZI,kws,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.1.0,62.873,2833.138,0.352,1066.4,perf,15.884
+v1.1,STMicroelectronics,NUCLEO_L4R5ZI,vww,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v8.1.0,118.694,5618.279,0.526,750.1,perf,8.413
+v1.1,STMicroelectronics,NUCLEO_U575ZI_Q,ad,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v8.1.0,4.85,121.446,0.34,459.7,perf,207.228
+v1.1,STMicroelectronics,NUCLEO_U575ZI_Q,ic,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v8.1.0,128.205,3383.822,0.609,270.7,perf,7.858
+v1.1,STMicroelectronics,NUCLEO_U575ZI_Q,kws,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v8.1.0,38.58,1004.221,0.43,378.0,perf,26.112
+v1.1,STMicroelectronics,NUCLEO_U575ZI_Q,vww,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v8.1.0,71.561,1920.636,0.654,256.4,perf,14.073
+v1.1,Skymizer,NUCLEO_L4R5ZI-mbed_os,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,8.073,334.536,0.273,1266.3,perf,123.862
+v1.1,Skymizer,NUCLEO_L4R5ZI-mbed_os,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,298.686,12684.27,0.349,1014.6,perf,3.347
+v1.1,Skymizer,NUCLEO_L4R5ZI-mbed_os,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,82.001,3454.848,0.27,1300.4,perf,12.191
+v1.1,Skymizer,NUCLEO_L4R5ZI-mbed_os,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,172.176,7477.617,0.362,998.4,perf,5.776
+v1.1,Skymizer,NUCLEO_L4R5ZI-zephyr,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,8.006,409.666,0.275,1550.6,perf,124.37
+v1.1,Skymizer,NUCLEO_L4R5ZI-zephyr,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,296.56,14927.33,0.351,1194.0,perf,3.367
+v1.1,Skymizer,NUCLEO_L4R5ZI-zephyr,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,93.642,4747.946,0.236,1787.1,perf,10.683
+v1.1,Skymizer,NUCLEO_L4R5ZI-zephyr,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,ONNC,197.785,10412.796,0.316,1390.3,perf,5.091
+v1.1,bosch,DISCO_F746NG,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,1.703,,0.718,,perf,
+v1.1,bosch,DISCO_F746NG,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,61.569,,0.94,,perf,
+v1.1,bosch,DISCO_F746NG,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,18.419,,0.668,,perf,
+v1.1,bosch,DISCO_F746NG,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,57.176,,0.606,,perf,
+v1.1,bosch,NUCLEO_G0B1RE,ad,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,46.546,,0.089,,perf,
+v1.1,bosch,NUCLEO_G0B1RE,ic,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,1669.449,,0.117,,perf,
+v1.1,bosch,NUCLEO_G0B1RE,kws,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,679.348,,0.061,,perf,
+v1.1,bosch,NUCLEO_G0B1RE,vww,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,1869.159,,0.063,,perf,
+v1.1,bosch,NUCLEO_H7A3ZI,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,1.356,,0.696,,perf,
+v1.1,bosch,NUCLEO_H7A3ZI,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,46.832,,0.953,,perf,
+v1.1,bosch,NUCLEO_H7A3ZI,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,14.715,,0.645,,perf,
+v1.1,bosch,NUCLEO_H7A3ZI,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,43.657,,0.613,,perf,
+v1.1,bosch,NUCLEO_L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,5.659,,0.389,,perf,
+v1.1,bosch,NUCLEO_L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,179.019,,0.582,,perf,
+v1.1,bosch,NUCLEO_L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,62.68,,0.353,,perf,
+v1.1,bosch,NUCLEO_L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,180.734,,0.345,,perf,
+v1.1,bosch,NUCLEO_U575ZI,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,3.802,,0.434,,perf,
+v1.1,bosch,NUCLEO_U575ZI,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,117.744,,0.664,,perf,
+v1.1,bosch,NUCLEO_U575ZI,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,39.736,,0.418,,perf,
+v1.1,bosch,NUCLEO_U575ZI,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,114.745,,0.408,,perf,
+v1.1,cTuning,NUCLEO-L4R5ZI_MicroTVM_CMSIS_NN,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.56,,0.267,,perf,
+v1.1,cTuning,NUCLEO-L4R5ZI_MicroTVM_CMSIS_NN,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,99.84,,0.222,,perf,
+v1.1,cTuning,NUCLEO-L4R5ZI_MicroTVM_Native,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,389.105,,0.268,,perf,
+v1.1,cTuning,NUCLEO-L4R5ZI_MicroTVM_Native,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,microTVM,144.03,,0.154,,perf,
+v1.1,fpgaconvnet,cora-z7,kws,ARM Cortex A9 Based,667.0,XC7Z007S,fpgaConvNet (Model + Optimiser),4.211,,0.946,,perf,
+v1.1,fpgaconvnet,zc706,ic,ARM Cortex A9 Based,650.0,XC7Z045,fpgaConvNet (Model + Optimiser),0.147,,130.586,,perf,
+v1.1,fpgaconvnet,zc706,vww,ARM Cortex A9 Based,650.0,XC7Z045,fpgaConvNet (Model + Optimiser),0.72,,15.997,,perf,
+v1.1,fpgaconvnet,zedboard,ic,ARM Cortex A9 Based,650.0,XC7Z020,fpgaConvNet (Model + Optimiser),0.411,,46.764,,perf,
+v1.1,fpgaconvnet,zedboard,kws,ARM Cortex A9 Based,650.0,XC7Z020,fpgaConvNet (Model + Optimiser),0.324,,12.621,,perf,
+v1.1,fpgaconvnet,zedboard,vww,ARM Cortex A9 Based,650.0,XC7Z020,fpgaConvNet (Model + Optimiser),9.487,,1.215,,perf,
+v1.1,fpgaconvnet,zybo,ic,ARM Cortex A9 Based,650.0,XC7Z010,fpgaConvNet (Model + Optimiser),3.15,,6.107,,perf,
+v1.1,fpgaconvnet,zybo,kws,ARM Cortex A9 Based,650.0,XC7Z010,fpgaConvNet (Model + Optimiser),2.151,,1.9,,perf,
+v1.1,kai_jiang,ZCU106,vww,RISC-V,20.0,ANPU,N/A,0.373,,1004.996,,perf,
+v1.1,plumerai,CY8CPROTO-062-4343W,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Plumerai Inference Engine 2023.05,4.455,,0.395,,perf,
+v1.1,plumerai,CY8CPROTO-062-4343W,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Plumerai Inference Engine 2023.05,188.964,,0.441,,perf,
+v1.1,plumerai,CY8CPROTO-062-4343W,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Plumerai Inference Engine 2023.05,54.063,,0.328,,perf,
+v1.1,plumerai,CY8CPROTO-062-4343W,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Plumerai Inference Engine 2023.05,108.295,,0.461,,perf,
+v1.1,plumerai,DISCO-F746NG,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Plumerai Inference Engine 2023.05,1.709,,0.716,,perf,
+v1.1,plumerai,DISCO-F746NG,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Plumerai Inference Engine 2023.05,62.877,,0.92,,perf,
+v1.1,plumerai,DISCO-F746NG,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Plumerai Inference Engine 2023.05,17.749,,0.693,,perf,
+v1.1,plumerai,DISCO-F746NG,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Plumerai Inference Engine 2023.05,34.08,,1.017,,perf,
+v1.1,plumerai,NUCLEO-H7A3ZI-Q,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Plumerai Inference Engine 2023.05,1.348,,0.7,,perf,
+v1.1,plumerai,NUCLEO-H7A3ZI-Q,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Plumerai Inference Engine 2023.05,50.927,,0.877,,perf,
+v1.1,plumerai,NUCLEO-H7A3ZI-Q,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Plumerai Inference Engine 2023.05,13.862,,0.685,,perf,
+v1.1,plumerai,NUCLEO-H7A3ZI-Q,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Plumerai Inference Engine 2023.05,26.817,,0.997,,perf,
+v1.1,plumerai,NUCLEO-L4R5ZI,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Plumerai Inference Engine 2023.05,4.052,,0.543,,perf,
+v1.1,plumerai,NUCLEO-L4R5ZI,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Plumerai Inference Engine 2023.05,167.757,,0.621,,perf,
+v1.1,plumerai,NUCLEO-L4R5ZI,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Plumerai Inference Engine 2023.05,47.781,,0.463,,perf,
+v1.1,plumerai,NUCLEO-L4R5ZI,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Plumerai Inference Engine 2023.05,98.756,,0.632,,perf,
+v1.1,plumerai,NUCLEO-U575ZI-Q,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Plumerai Inference Engine 2023.05,3.672,,0.45,,perf,
+v1.1,plumerai,NUCLEO-U575ZI-Q,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Plumerai Inference Engine 2023.05,104.286,,0.749,,perf,
+v1.1,plumerai,NUCLEO-U575ZI-Q,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Plumerai Inference Engine 2023.05,30.043,,0.553,,perf,
+v1.1,plumerai,NUCLEO-U575ZI-Q,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Plumerai Inference Engine 2023.05,59.492,,0.787,,perf,
+v1.1,syntiant,syntiant_9120_0v9_30mhz,ic,HiFi3 + M0,30.7,Syntiant Core 2,Syntiant Packager,15.975,101.833,25.491,8.1,perf,62.267
+v1.1,syntiant,syntiant_9120_0v9_30mhz,kws,HiFi3 + M0,30.7,Syntiant Core 2,Syntiant Packager,4.367,31.537,19.816,11.9,perf,227.204
+v1.1,syntiant,syntiant_9120_0v9_30mhz,vww,HiFi3 + M0,30.7,Syntiant Core 2,Syntiant Packager,12.723,71.711,19.175,9.6,perf,78.088
+v1.1,syntiant,syntiant_9120_1v1_98mhz,ic,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,5.122,139.367,24.729,11.1,perf,195.027
+v1.1,syntiant,syntiant_9120_1v1_98mhz,kws,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,1.481,43.802,18.17,16.5,perf,664.507
+v1.1,syntiant,syntiant_9120_1v1_98mhz,vww,HiFi3 + M0,98.7,Syntiant Core 2,Syntiant Packager,4.1,97.164,18.507,13.0,perf,241.08
+v1.2,Qualcomm,Snapdragon_8_Gen_3_Mobile_Platform_MTP,ad,Qualcomm Kryo CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.074,,,,perf,
+v1.2,Qualcomm,Snapdragon_8_Gen_3_Mobile_Platform_MTP,ic,Qualcomm Kryo CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.149,,,,perf,
+v1.2,Qualcomm,Snapdragon_8_Gen_3_Mobile_Platform_MTP,kws,Qualcomm Kryo CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.085,,,,perf,
+v1.2,Qualcomm,Snapdragon_8_Gen_3_Mobile_Platform_MTP,vww,Qualcomm Kryo CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.192,,,,perf,
+v1.2,Renesas,EK-RA8D1,ad,32-bit Arm® Cortex®-M85,480.0,,,0.531,,1.037,,perf,
+v1.2,Renesas,EK-RA8D1,ic,32-bit Arm® Cortex®-M85,480.0,,,8.478,,3.072,,perf,
+v1.2,Renesas,EK-RA8D1,kws,32-bit Arm® Cortex®-M85,480.0,,,3.465,,1.597,,perf,
+v1.2,Renesas,EK-RA8D1,vww,32-bit Arm® Cortex®-M85,480.0,,,13.393,,1.165,,perf,
+v1.2,STMicroelectronics,NUCLEO_H7A3ZI_Q,ad,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v9.0.0,1.225,165.728,0.77,627.3,perf,818.331
+v1.2,STMicroelectronics,NUCLEO_H7A3ZI_Q,ic,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v9.0.0,40.845,5090.283,1.093,407.2,perf,24.585
+v1.2,STMicroelectronics,NUCLEO_H7A3ZI_Q,kws,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v9.0.0,11.318,1375.599,0.838,517.8,perf,88.59
+v1.2,STMicroelectronics,NUCLEO_H7A3ZI_Q,vww,32-Bit ARM Cortex-M7,280.0,,X-CUBE-AI v9.0.0,23.804,2965.461,1.124,395.9,perf,42.088
+v1.2,STMicroelectronics,NUCLEO_L4R5ZI,ad,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v9.0,5.261,203.368,0.418,769.8,perf,190.458
+v1.2,STMicroelectronics,NUCLEO_L4R5ZI,ic,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v9.0,165.125,6919.375,0.631,553.5,perf,6.062
+v1.2,STMicroelectronics,NUCLEO_L4R5ZI,kws,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v9.0,43.187,1820.454,0.513,685.2,perf,23.175
+v1.2,STMicroelectronics,NUCLEO_L4R5ZI,vww,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v9.0,88.928,3894.566,0.702,520.0,perf,11.255
+v1.2,STMicroelectronics,NUCLEO_U575ZI_Q,ad,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v9.0,3.429,81.875,0.481,309.9,perf,293.341
+v1.2,STMicroelectronics,NUCLEO_U575ZI_Q,ic,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v9.0,111.074,2578.969,0.703,206.3,perf,9.057
+v1.2,STMicroelectronics,NUCLEO_U575ZI_Q,kws,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v9.0,29.056,656.163,0.571,247.0,perf,34.623
+v1.2,STMicroelectronics,NUCLEO_U575ZI_Q,vww,Arm Cortex-M33 32-bit RISC core,160.0,,X-CUBE-AI v9.0,59.277,1354.685,0.79,180.9,perf,16.978
+v1.2,Skymizer,TinkerV-linux-andes_nn,ad,RISC-V AndesCore™ AX45MP Single core,,,ONNC,0.367,,,,perf,
+v1.2,Skymizer,TinkerV-linux-andes_nn,ic,RISC-V AndesCore™ AX45MP Single core,,,ONNC,33.37,,,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_float,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,16.775,,0.105,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_float,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,479.846,,0.174,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_float,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,360.62,,0.138,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_int8,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,5.969,,0.295,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_int8,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,162.206,,0.514,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_int8,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,54.154,,0.327,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_int8,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,154.679,,0.323,,perf,
+v1.2,bosch,CY8CPROTO_062_4343W_int8_max_performance,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),150.0,,Bosch Hardware-Aware Lowering Engine (HA,4.93,,0.357,,perf,
+v1.2,bosch,DISCO_F746NG_int8,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,1.711,,0.715,,perf,
+v1.2,bosch,DISCO_F746NG_int8,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,62.555,,0.925,,perf,
+v1.2,bosch,DISCO_F746NG_int8,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,18.959,,0.649,,perf,
+v1.2,bosch,DISCO_F746NG_int8,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,57.248,,0.606,,perf,
+v1.2,bosch,DISCO_F746NG_int8_max_performance,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),216.0,,Bosch Hardware-Aware Lowering Engine (HA,1.425,,0.858,,perf,
+v1.2,bosch,NUCLEO_G0B1RE_int8,ad,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,40.893,,0.101,,perf,
+v1.2,bosch,NUCLEO_G0B1RE_int8,ic,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,1522.07,,0.128,,perf,
+v1.2,bosch,NUCLEO_G0B1RE_int8,kws,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,474.608,,0.087,,perf,
+v1.2,bosch,NUCLEO_G0B1RE_int8,vww,32-bit Arm® Cortex®-M0+,64.0,,Bosch Hardware-Aware Lowering Engine (HA,1414.427,,0.083,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_float,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,5.23,,0.18,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_float,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,124.224,,0.359,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_float,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,81.42,,0.329,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,1.359,,0.694,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,45.848,,0.974,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8,kws,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,14.688,,0.646,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8,vww,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,43.764,,0.611,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8_max_performance,ad,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,1.083,,0.871,,perf,
+v1.2,bosch,NUCLEO_H7A3ZI_int8_min_ram,ic,32-bit Arm® Cortex®-M7 (DSP + FPU),280.0,,Bosch Hardware-Aware Lowering Engine (HA,84.509,,0.528,,perf,
+v1.2,bosch,NUCLEO_L4R5ZI_int8,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,5.835,,0.377,,perf,
+v1.2,bosch,NUCLEO_L4R5ZI_int8,ic,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,180.538,,0.577,,perf,
+v1.2,bosch,NUCLEO_L4R5ZI_int8,kws,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,60.158,,0.368,,perf,
+v1.2,bosch,NUCLEO_L4R5ZI_int8,vww,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,180.505,,0.346,,perf,
+v1.2,bosch,NUCLEO_L4R5ZI_int8_max_performance,ad,32-bit Arm® Cortex®-M4 (DSP + FPU),120.0,,Bosch Hardware-Aware Lowering Engine (HA,4.728,,0.466,,perf,
+v1.2,bosch,NUCLEO_U575ZI_int8,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,3.804,,0.434,,perf,
+v1.2,bosch,NUCLEO_U575ZI_int8,ic,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,120.54,,0.648,,perf,
+v1.2,bosch,NUCLEO_U575ZI_int8,kws,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,38.583,,0.43,,perf,
+v1.2,bosch,NUCLEO_U575ZI_int8,vww,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,119.832,,0.391,,perf,
+v1.2,bosch,NUCLEO_U575ZI_int8_max_performance,ad,32-bit Arm® Cortex®-M33 (DSP + FPU),160.0,,Bosch Hardware-Aware Lowering Engine (HA,3.091,,0.534,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_float,ad,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,6.183,,0.178,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_float,ic,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,222.469,,0.234,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_int8,ad,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,7.442,,0.148,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_int8,ic,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,232.883,,0.224,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_int8,kws,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,63.654,,0.174,,perf,
+v1.2,bosch,RENESAS_RH850_F1KMS4_int8_max_performance,ad,32-bit RH850G3KH2.0 ,240.0,,Bosch Hardware-Aware Lowering Engine (HA,5.639,,0.195,,perf,
+v1.2,kai_jiang,LC236R5E176_BOARD_V2.0,ic,RISC-V,277.5,,,108.003,,0.417,,perf,
+v1.2,kai_jiang,LC236R5E176_BOARD_V2.0,vww,RISC-V,277.5,,,120.279,,0.224,,perf,
+v1.2,kai_jiang,VCU128,vww,RISC-V,40.0,ANPU,,0.289,,647.057,,perf,
+v1.2,syntiant,syntiant_9120_0v9_30mhz,ic,HiFi3 + M0,30.7,Syntiant Core 2,N/A,15.975,101.833,25.491,8.1,perf,62.267
+v1.2,syntiant,syntiant_9120_0v9_30mhz,kws,HiFi3 + M0,30.7,Syntiant Core 2,N/A,4.367,31.537,19.816,11.9,perf,227.204
+v1.2,syntiant,syntiant_9120_0v9_30mhz,vww,HiFi3 + M0,30.7,Syntiant Core 2,N/A,12.723,71.711,19.175,9.6,perf,78.088
+v1.2,syntiant,syntiant_9120_1v1_98mhz,ic,HiFi3 + M0,98.7,Syntiant Core 2,N/A,5.122,139.367,24.729,11.1,perf,195.027
+v1.2,syntiant,syntiant_9120_1v1_98mhz,kws,HiFi3 + M0,98.7,Syntiant Core 2,N/A,1.481,43.802,18.17,16.5,perf,664.507
+v1.2,syntiant,syntiant_9120_1v1_98mhz,vww,HiFi3 + M0,98.7,Syntiant Core 2,N/A,4.1,97.164,18.507,13.0,perf,241.08
+v1.3,Qualcomm,Next_Generation_Snapdragon_Mobile_Platform_MTP,ad,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.068,,,,perf,
+v1.3,Qualcomm,Next_Generation_Snapdragon_Mobile_Platform_MTP,ic,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.096,,,,perf,
+v1.3,Qualcomm,Next_Generation_Snapdragon_Mobile_Platform_MTP,kws,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.065,,,,perf,
+v1.3,Qualcomm,Next_Generation_Snapdragon_Mobile_Platform_MTP,vww,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.114,,,,perf,
+v1.3,STMicroelectronics,NUCLEO_L4R5ZI-P,ad,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v10.2,4.794,160.4232,0.459,607.2,perf,
+v1.3,STMicroelectronics,NUCLEO_L4R5ZI-P,ic,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v10.2,165.673,5495.915,0.629,439.6,perf,
+v1.3,STMicroelectronics,NUCLEO_L4R5ZI-P,kws,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v10.2,43.418,1430.6681,0.51,538.5,perf,
+v1.3,STMicroelectronics,NUCLEO_L4R5ZI-P,vww,32-bit Arm Cortex-M4 (DSP + FPU),120.0,,X-CUBE-AI v10.2,89.437,3029.7521,0.698,404.5,perf,
+v1.3,STMicroelectronics,NUCLEO_U385RG_Q,ad,Arm Cortex-M33 32-bit RISC core,96.0,,X-CUBE-AI v10.2,5.41,31.8347,0.509,120.5,perf,
+v1.3,STMicroelectronics,NUCLEO_U385RG_Q,ic,Arm Cortex-M33 32-bit RISC core,96.0,,X-CUBE-AI v10.2,182.448,965.5817,0.714,77.2,perf,
+v1.3,STMicroelectronics,NUCLEO_U385RG_Q,kws,Arm Cortex-M33 32-bit RISC core,96.0,,X-CUBE-AI v10.2,48.302,245.3412,0.573,92.3,perf,
+v1.3,STMicroelectronics,NUCLEO_U385RG_Q,vww,Arm Cortex-M33 32-bit RISC core,96.0,,X-CUBE-AI v10.2,98.736,518.9761,0.79,69.3,perf,
+v1.3,STMicroelectronics,NUCLEO_U3C5ZIT6_Q,ic,Arm Cortex-M33 32-bit RISC core,96.0,DSP Co-processor,STEDGE-AI Internal version,50.083,,2.6,,perf,
+v1.3,STMicroelectronics,NUCLEO_U3C5ZIT6_Q,kws,Arm Cortex-M33 32-bit RISC core,96.0,DSP Co-processor,STEDGE-AI Internal version,16.531,,1.674,,perf,
+v1.3,STMicroelectronics,NUCLEO_U3C5ZIT6_Q,vww,Arm Cortex-M33 32-bit RISC core,96.0,DSP Co-processor,STEDGE-AI Internal version,37.177,,2.099,,perf,
+v1.3,STMicroelectronics,NUCLEO_U575ZI_Q,ad,32-bit Arm Cortex-M33 (DSP + FPU),160.0,,X-CUBE-AI v10.2,3.209,77.2364,0.514,292.3,perf,
+v1.3,STMicroelectronics,NUCLEO_U575ZI_Q,ic,32-bit Arm Cortex-M33 (DSP + FPU),160.0,,X-CUBE-AI v10.2,109.493,2565.2442,0.714,205.2,perf,
+v1.3,STMicroelectronics,NUCLEO_U575ZI_Q,kws,32-bit Arm Cortex-M33 (DSP + FPU),160.0,,X-CUBE-AI v10.2,28.995,664.4239,0.573,250.1,perf,
+v1.3,STMicroelectronics,NUCLEO_U575ZI_Q,vww,32-bit Arm Cortex-M33 (DSP + FPU),160.0,,X-CUBE-AI v10.2,59.266,1372.1684,0.79,183.2,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0,ad,RISC-V 64GCVB Core,614.4,,,0.737,,0.583,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0,ic,RISC-V 64GCVB Core,614.4,,,2.283,,8.914,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0,kws,RISC-V 64GCVB Core,614.4,,,1.394,,3.102,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0,vww,RISC-V 64GCVB Core,614.4,,,4.448,,2.74,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,ad,RISC-V 64GCVB Core,,,,0.316,,,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,ic,RISC-V 64GCVB Core,,,,0.977,,,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,kws,RISC-V 64GCVB Core,,,,0.576,,,,perf,
+v1.3,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,vww,RISC-V 64GCVB Core,,,,2.183,,,,perf,
+v1.3,kai_jiang,VCU128,vww,RISC-V,50.0,ANPU,,0.216,,692.779,,perf,
+v1.3,syntiant,syntiant_9120_0v9_30mhz,ic,HiFi3 + M0,30.7,Syntiant Core 2,N/A,15.975,101.833,25.491,8.1,perf,62.267
+v1.3,syntiant,syntiant_9120_0v9_30mhz,kws,HiFi3 + M0,30.7,Syntiant Core 2,N/A,4.367,31.537,19.816,11.9,perf,227.204
+v1.3,syntiant,syntiant_9120_0v9_30mhz,vww,HiFi3 + M0,30.7,Syntiant Core 2,N/A,12.723,71.711,19.175,9.6,perf,78.088
+v1.3,syntiant,syntiant_9120_1v1_98mhz,ic,HiFi3 + M0,98.7,Syntiant Core 2,N/A,5.122,139.367,24.729,11.1,perf,195.027
+v1.3,syntiant,syntiant_9120_1v1_98mhz,kws,HiFi3 + M0,98.7,Syntiant Core 2,N/A,1.481,43.802,18.17,16.5,perf,664.507
+v1.3,syntiant,syntiant_9120_1v1_98mhz,vww,HiFi3 + M0,98.7,Syntiant Core 2,N/A,4.1,97.164,18.507,13.0,perf,241.08
+v1.4,Andes,AndesCore_AX27_AnDLA_I370,ad,AndesCore™ AX27,60.0,AnDLA I370 (64MAC),"tflite-micro, https://github.com/tensorf",0.844,,5.219,,perf,
+v1.4,Andes,AndesCore_AX27_AnDLA_I370,ic,AndesCore™ AX27,60.0,AnDLA I370 (64MAC),"tflite-micro, https://github.com/tensorf",3.865,,53.903,,perf,
+v1.4,Andes,AndesCore_AX27_AnDLA_I370,kws,AndesCore™ AX27,60.0,AnDLA I370 (64MAC),"tflite-micro, https://github.com/tensorf",1.401,,31.597,,perf,
+v1.4,Andes,AndesCore_AX27_AnDLA_I370,vww,AndesCore™ AX27,60.0,AnDLA I370 (64MAC),"tflite-micro, https://github.com/tensorf",4.09,,30.522,,perf,
+v1.4,Andes,AndesCore_AX46MPV,ad,AndesCore™ AX46MPV (RVV 128-bit),40.0,,"tflite-micro, https://github.com/tensorf",2.432,,2.715,,perf,
+v1.4,Andes,AndesCore_AX46MPV,ic,AndesCore™ AX46MPV (RVV 128-bit),40.0,,"tflite-micro, https://github.com/tensorf",62.453,,5.004,,perf,
+v1.4,Andes,AndesCore_AX46MPV,kws,AndesCore™ AX46MPV (RVV 128-bit),40.0,,"tflite-micro, https://github.com/tensorf",19.182,,3.462,,perf,
+v1.4,Andes,AndesCore_AX46MPV,vww,AndesCore™ AX46MPV (RVV 128-bit),40.0,,"tflite-micro, https://github.com/tensorf",61.977,,3.021,,perf,
+v1.4,Asygn,colibryNPU_P1_300MHz,ad,32-Bit RISC-V,300.0,NNPA_16x,ColibryNPU SDK,0.058,2.7412,15.283,10.4,perf,
+v1.4,Asygn,colibryNPU_P1_300MHz,ic,32-Bit RISC-V,300.0,NNPA_16x,ColibryNPU SDK,2.688,108.4162,15.5,8.7,perf,
+v1.4,Asygn,colibryNPU_P1_300MHz,kws,32-Bit RISC-V,300.0,NNPA_16x,ColibryNPU SDK,0.567,17.8414,15.621,6.7,perf,
+v1.4,Asygn,colibryNPU_P1_300MHz,vww,32-Bit RISC-V,300.0,NNPA_16x,ColibryNPU SDK,1.629,49.6482,15.325,6.6,perf,
+v1.4,Asygn,colibryNPU_P1_40MHz,ad,32-Bit RISC-V,40.0,NNPA_16x,ColibryNPU SDK,0.433,1.2732,15.26,4.8,perf,
+v1.4,Asygn,colibryNPU_P1_40MHz,ic,32-Bit RISC-V,40.0,NNPA_16x,ColibryNPU SDK,20.249,49.2075,15.435,3.9,perf,
+v1.4,Asygn,colibryNPU_P1_40MHz,kws,32-Bit RISC-V,40.0,NNPA_16x,ColibryNPU SDK,4.259,8.0712,15.596,3.0,perf,
+v1.4,Asygn,colibryNPU_P1_40MHz,vww,32-Bit RISC-V,40.0,NNPA_16x,ColibryNPU SDK,12.258,22.2199,15.275,3.0,perf,
+v1.4,DeepGate,nucleo_h7a3zi_q,ad,32-Bit ARM Cortex-M7,280.0,,DeepGate libmodel (precompiled per-(boar,1.372,,0.688,,perf,
+v1.4,DeepGate,nucleo_h7a3zi_q,ic,32-Bit ARM Cortex-M7,280.0,,DeepGate libmodel (precompiled per-(boar,51.372,,0.869,,perf,
+v1.4,DeepGate,nucleo_h7a3zi_q,kws,32-Bit ARM Cortex-M7,280.0,,DeepGate libmodel (precompiled per-(boar,14.239,,0.666,,perf,
+v1.4,DeepGate,nucleo_h7a3zi_q,vww,32-Bit ARM Cortex-M7,280.0,,DeepGate libmodel (precompiled per-(boar,43.962,,0.608,,perf,
+v1.4,DeepGate,xg24_ek2703a,ad,32-Bit ARM Cortex-M33,78.0,Silicon Labs MVP (Matrix Vector Processor),DeepGate libmodel (precompiled per-(boar,3.0,,1.129,,perf,
+v1.4,DeepGate,xg24_ek2703a,ic,32-Bit ARM Cortex-M33,78.0,Silicon Labs MVP (Matrix Vector Processor),DeepGate libmodel (precompiled per-(boar,119.918,,1.337,,perf,
+v1.4,DeepGate,xg24_ek2703a,kws,32-Bit ARM Cortex-M33,78.0,Silicon Labs MVP (Matrix Vector Processor),DeepGate libmodel (precompiled per-(boar,34.864,,0.977,,perf,
+v1.4,DeepGate,xg24_ek2703a,vww,32-Bit ARM Cortex-M33,78.0,Silicon Labs MVP (Matrix Vector Processor),DeepGate libmodel (precompiled per-(boar,110.717,,0.867,,perf,
+v1.4,Qualcomm,Snapdragon_8_Elite_Gen5_Mobile_Platform,ad,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.069,,,,perf,
+v1.4,Qualcomm,Snapdragon_8_Elite_Gen5_Mobile_Platform,ic,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.099,,,,perf,
+v1.4,Qualcomm,Snapdragon_8_Elite_Gen5_Mobile_Platform,kws,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.066,,,,perf,
+v1.4,Qualcomm,Snapdragon_8_Elite_Gen5_Mobile_Platform,vww,Qualcomm Oryon CPU,,Qualcomm Sensing Hub,Qualcomm AI Stack,0.118,,,,perf,
+v1.4,Renesas,ek-ra8p1,ad,Arm Cortex-M85 + Cortex-M33,1000.0,Arm Ethos-U55 NPU,RUHMI Framework,0.132,,2.001,,perf,
+v1.4,Renesas,ek-ra8p1,ic,Arm Cortex-M85 + Cortex-M33,1000.0,Arm Ethos-U55 NPU,RUHMI Framework,0.34,,36.777,,perf,
+v1.4,Renesas,ek-ra8p1,kws,Arm Cortex-M85 + Cortex-M33,1000.0,Arm Ethos-U55 NPU,RUHMI Framework,0.109,,24.374,,perf,
+v1.4,Renesas,ek-ra8p1,vww,Arm Cortex-M85 + Cortex-M33,1000.0,Arm Ethos-U55 NPU,RUHMI Framework,0.362,,20.689,,perf,
+v1.4,STMicroelectronics,NUCLEO_H7A3ZI_Q,ad,Arm Cortex-M7 32-bit RISC core,280.0,,STEdgeAI-Core 4.0,1.166,149.4191,0.809,565.6,perf,
+v1.4,STMicroelectronics,NUCLEO_H7A3ZI_Q,ic,Arm Cortex-M7 32-bit RISC core,280.0,,STEdgeAI-Core 4.0,41.682,5563.162,1.071,445.0,perf,
+v1.4,STMicroelectronics,NUCLEO_H7A3ZI_Q,kws,Arm Cortex-M7 32-bit RISC core,280.0,,STEdgeAI-Core 4.0,11.455,1490.0147,0.828,560.8,perf,
+v1.4,STMicroelectronics,NUCLEO_H7A3ZI_Q,vww,Arm Cortex-M7 32-bit RISC core,280.0,,STEdgeAI-Core 4.0,24.416,3197.7309,1.096,427.0,perf,
+v1.4,STMicroelectronics,NUCLEO_H7P5II_CM7,ic,Arm Cortex-M7 32-bit RISC core,550.0,,STEdgeAI-Core Internal version,21.121,,1.076,,perf,
+v1.4,STMicroelectronics,NUCLEO_H7P5II_NPU,ic,Arm Cortex-M7 32-bit RISC core,550.0,Neural-ART V1 (NPU),STEdgeAI-Core Internal version,0.962,,23.628,,perf,
+v1.4,STMicroelectronics,NUCLEO_L4R5ZI-P,ad,Arm Cortex-M4 32-bit RISC core,120.0,,STEdgeAI-Core 4.0,4.794,153.8357,0.459,582.3,perf,
+v1.4,STMicroelectronics,NUCLEO_L4R5ZI-P,ic,Arm Cortex-M4 32-bit RISC core,120.0,,STEdgeAI-Core 4.0,165.645,5251.5039,0.629,420.1,perf,
+v1.4,STMicroelectronics,NUCLEO_L4R5ZI-P,kws,Arm Cortex-M4 32-bit RISC core,120.0,,STEdgeAI-Core 4.0,43.397,1364.0246,0.51,513.4,perf,
+v1.4,STMicroelectronics,NUCLEO_L4R5ZI-P,vww,Arm Cortex-M4 32-bit RISC core,120.0,,STEdgeAI-Core 4.0,89.35,2885.4652,0.699,385.3,perf,
+v1.4,STMicroelectronics,NUCLEO_U385RG_Q,ad,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,5.385,32.2912,0.511,122.2,perf,
+v1.4,STMicroelectronics,NUCLEO_U385RG_Q,ic,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,182.582,978.818,0.713,78.3,perf,
+v1.4,STMicroelectronics,NUCLEO_U385RG_Q,kws,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,48.351,251.8486,0.572,94.8,perf,
+v1.4,STMicroelectronics,NUCLEO_U385RG_Q,vww,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,98.873,523.5468,0.789,69.9,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_CM33,ad,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,5.461,36.0643,0.504,136.5,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_CM33,ic,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,182.682,1099.5843,0.713,88.0,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_CM33,kws,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,48.421,278.6651,0.572,104.9,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_CM33,vww,Arm Cortex-M33 32-bit RISC core,96.0,,STEdgeAI-Core 4.0,98.971,588.6094,0.788,78.6,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_HSP,ad,Arm Cortex-M33 32-bit RISC core,96.0,Hardware Signal Processor (HSP),STEdgeAI-Core 4.0,3.728,39.2064,0.738,148.4,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_HSP,ic,Arm Cortex-M33 32-bit RISC core,96.0,Hardware Signal Processor (HSP),STEdgeAI-Core 4.0,49.998,962.9441,2.605,77.0,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_HSP,kws,Arm Cortex-M33 32-bit RISC core,96.0,Hardware Signal Processor (HSP),STEdgeAI-Core 4.0,16.514,300.5804,1.676,113.1,perf,
+v1.4,STMicroelectronics,NUCLEO_U3C5ZIT6_Q_HSP,vww,Arm Cortex-M33 32-bit RISC core,96.0,Hardware Signal Processor (HSP),STEdgeAI-Core 4.0,37.082,650.4687,2.104,86.8,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0,ad,RISC-V 64GCVB Core,614.4,,,0.746,,0.576,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0,ic,RISC-V 64GCVB Core,614.4,,,2.26,,9.004,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0,kws,RISC-V 64GCVB Core,614.4,,,1.37,,3.157,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0,vww,RISC-V 64GCVB Core,614.4,,,4.505,,2.706,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,ad,RISC-V 64GCVB Core,,,,0.326,,,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,ic,RISC-V 64GCVB Core,,,,0.974,,,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,kws,RISC-V 64GCVB Core,,,,0.577,,,,perf,
+v1.4,kai_jiang,K1_BOARD_V1.0_HIGH_FREQ,vww,RISC-V 64GCVB Core,,,,2.095,,,,perf,
+v1.4,kai_jiang,VCU128,vww,RISC-V,60.0,ANPU,,0.209,,596.189,,perf,
+v1.4,syntiant,syntiant_9120_0v9_21mhz,ic,HiFi3 + M0,21.5,Syntiant Core 2,N/A,22.882,109.3967,25.412,8.8,perf,
+v1.4,syntiant,syntiant_9120_0v9_21mhz,vww,HiFi3 + M0,21.5,Syntiant Core 2,N/A,16.787,73.926,20.752,9.9,perf,
+v1.4,syntiant,syntiant_9120_1v1_98mhz,ic,HiFi3 + M0,98.7,Syntiant Core 2,N/A,5.534,142.7367,22.887,11.4,perf,
+v1.4,syntiant,syntiant_9120_1v1_98mhz,vww,HiFi3 + M0,98.7,Syntiant Core 2,N/A,4.122,93.666,18.408,12.5,perf,
